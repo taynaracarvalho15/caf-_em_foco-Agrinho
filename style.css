@@ -83,6 +83,19 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
+.banner-topo {
+  width: 100%;
+  overflow: hidden;
+  background-color: #3e2c1c; /* tom escuro de café para caso a imagem demore a carregar */
+}
+
+.banner-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .balao-pergunta {
   display: inline-block;
   background-color: #f3e5ab; /* tom amarelado suave */
