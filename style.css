@@ -1,5 +1,5 @@
 html {
-  font-size: clamp(14px, 2vw, 18px); /* tamanho base responsivo */
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 body {
@@ -9,6 +9,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -101,7 +103,7 @@ nav a:hover {
 .banner-topo {
   width: 100%;
   overflow: hidden;
-  background-color: #3e2c1c; /* tom escuro de café para caso a imagem demore a carregar */
+  background-color: #3e2c1c;
 }
 
 .banner-imagem {
@@ -113,8 +115,8 @@ nav a:hover {
 
 .balao-pergunta {
   display: inline-block;
-  background-color: #f3e5ab; /* tom amarelado suave */
-  color: #4e342e; /* marrom café */
+  background-color: #f3e5ab;
+  color: #4e342e;
   padding: 15px 20px;
   border-radius: 40px;
   text-decoration: none;
