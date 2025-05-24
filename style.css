@@ -13,94 +13,7 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: clamp(24px, 5vw, 40px);
-}
-
-h2 {
-  font-size: clamp(20px, 4vw, 32px);
-}
-
-h3 {
-  font-size: clamp(18px, 3.5vw, 28px);
-}
-
-p, a, li {
-  font-size: clamp(14px, 2vw, 18px);
-}
-
 header {
-  background-color: #4b3621;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: #f9f5f0;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #d7b899;
-}
-
-.hero {
-  position: relative;
-  background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 2;
-  font-size: 2.8rem;
-  text-shadow: 2px 2px 4px #000;
-}
-
-.container {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.container h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #4b3621;
-}
-
-.container p {
-  margin-bottom: 15px;
-}
-
-.banner-topo {
   width: 100%;
   overflow: hidden;
   background-color: #3e2c1c;
@@ -111,6 +24,27 @@ nav a:hover {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: clamp(24px, 5vw, 40px);
+  text-align: center;
+}
+
+.intro p {
+  font-size: clamp(14px, 2vw, 18px);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.balao-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .balao-pergunta {
@@ -124,7 +58,7 @@ nav a:hover {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  position: fixed;
+  position: relative;
   z-index: 10;
   transition: transform 0.3s ease;
 }
@@ -144,19 +78,18 @@ nav a:hover {
 
 .balao1 {
   top: 180px;
-  left: 50px;
 }
+
 .balao2 {
   top: 180px;
-  right: 50px;
 }
+
 .balao3 {
   top: 280px;
-  left: 80px;
 }
+
 .balao4 {
   top: 280px;
-  right: 60px;
 }
 
 footer {
@@ -166,4 +99,4 @@ footer {
   padding: 15px 10px;
   font-size: 0.9rem;
   margin-top: 40px;
-  }
+}
