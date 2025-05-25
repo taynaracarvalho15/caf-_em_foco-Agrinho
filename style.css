@@ -111,10 +111,11 @@ nav a:hover {
   object-fit: cover;
 }
 
+/* BLOCO DE BALÕES ATUALIZADO */
 .area-baloes {
   position: relative;
   width: 100%;
-  height: 500px; 
+  height: 650px;
   margin: 40px 0;
 }
 
@@ -148,20 +149,40 @@ nav a:hover {
 }
 
 .balao1 {
-  top: 10%;
-  left: 5%;
-}
-.balao2 {
-  top: 10%;
-  right: 5%;
-}
-.balao3 {
-  top: 50%;
+  top: 8%;
   left: 8%;
 }
+.balao2 {
+  top: 8%;
+  right: 8%;
+}
+.balao3 {
+  top: 60%;
+  left: 10%;
+}
 .balao4 {
-  top: 50%;
-  right: 6%;
+  top: 60%;
+  right: 10%;
+}
+
+/* RESPONSIVIDADE PARA BALÕES */
+@media (max-width: 768px) {
+  .area-baloes {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .balao-pergunta {
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 10px 0;
+    text-align: center;
+  }
 }
 
 footer {
