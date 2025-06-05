@@ -103,12 +103,6 @@ nav a:hover {
   background-color: #772918;
 }
 
-.banner-imagem {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
 
 .area-baloes {
   position: relative;
