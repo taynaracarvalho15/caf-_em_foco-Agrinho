@@ -127,7 +127,7 @@ nav a:hover {
   font-weight: bold;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
-  color: #672304;;
+  color: #672304;
   position: absolute;
   z-index: 10;
   transition: transform 0.3s ease;
