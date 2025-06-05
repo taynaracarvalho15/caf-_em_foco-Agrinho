@@ -120,14 +120,13 @@ nav a:hover {
 .balao-pergunta {
   display: inline-block;
   background-color: #f3e5ab;
-  color: #4e342e;
+  color: #772918;
   padding: 15px 20px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
-  color: #672304;
   position: absolute;
   z-index: 10;
   transition: transform 0.3s ease;
