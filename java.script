@@ -1,0 +1,15 @@
+function bemVindo() {
+  alert("Bem-vindo ao Café em Foco!");
+}
+
+function voltarAoTopo() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function toggleMenu() {
+  const menu = document.querySelector('nav ul');
+  menu.classList.toggle('mostrar');
+}
