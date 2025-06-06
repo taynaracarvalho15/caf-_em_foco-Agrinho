@@ -1,42 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café em Foco</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="hero">
-      <h1>Bem-vindo ao Café em Foco</h1>
-      <div class="cabeçalho" src="img/cabeçalho.jpg"
+<body onload="bemVindo()">
+  <header>
+    <h1>Café em Foco</h1>
+    <nav id="menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Café</h2>
+      <p>O café é uma das bebidas mais populares do mundo. É cultivado principalmente em países tropicais, com destaque para o Brasil. O café é apreciado por seu aroma e sabor marcantes, além de ser uma importante fonte de renda para milhares de produtores.</p>
     </section>
 
+    <section id="curiosidades">
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>O Brasil é o maior produtor de café do mundo.</li>
+        <li>Existem mais de 60 espécies de café, mas as mais conhecidas são Arábica e Robusta.</li>
+        <li>O café já foi proibido em alguns países por ser considerado uma bebida estimulante.</li>
+      </ul>
+    </section>
 
-    <section class="balao-links">
-      <a href="colheita.html" class="balao-pergunta flutuante balao1">Como é colhido?</a>
-      <a href="plantio.html" class="balao-pergunta flutuante balao2">Como é plantado?</a>
-      <a href="clima.html" class="balao-pergunta flutuante balao3">Qual clima prefere?</a>
-      <a href="noticias.html" class="balao-pergunta flutuante balao4">Veja aqui notícias sobre o café</a>
+    <section id="noticias">
+      <h2>Notícias Recentes</h2>
+      <article>
+        <h3>Produção de café deve crescer 2,7% em 2025</h3>
+        <p>A safra brasileira deve aumentar devido a boas condições climáticas e novas técnicas de manejo.</p>
+        <a href="https://www.poder360.com.br/economia/producao-de-cafe-no-brasil-deve-crescer-27-em-2025/" target="_blank">Leia mais</a>
+      </article>
+      <article>
+        <h3>Técnicas sustentáveis impulsionam a produtividade</h3>
+        <p>Produtores estão adotando métodos mais ecológicos para garantir a qualidade dos grãos.</p>
+        <a href="https://g1.globo.com/economia/agronegocios/noticia/2025/05/20/tecnicas-sustentaveis-no-cafe.ghtml" target="_blank">Leia mais</a>
+      </article>
+      <article>
+        <h3>Café brasileiro conquista mercados internacionais</h3>
+        <p>Exportações crescem principalmente para EUA e Europa, segundo dados recentes.</p>
+        <a href="https://www.canalrural.com.br/noticias/cafe/cafe-brasileiro-exportacoes/" target="_blank">Leia mais</a>
+      </article>
+      <article>
+        <h3>Pesquisa destaca importância da irrigação controlada</h3>
+        <p>Estudo mostra como a irrigação influencia na qualidade e produtividade do café.</p>
+        <a href="https://revistagloborural.globo.com/agronegocios/noticia/2025/04/pesquisa-destaca-irrigacao-cafe.html" target="_blank">Leia mais</a>
+      </article>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Envie sugestões ou dúvidas para nosso e-mail: <a href="mailto:contato@cafeemfoco.com">contato@cafeemfoco.com</a></p>
     </section>
   </main>
 
+  <button id="voltar-topo" onclick="voltarAoTopo()">Voltar ao topo</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <footer>
-    <p>© Desenvolvido por Taynara Carvalho.</p>
+    <p>&copy; 2025 Café em Foco - Projeto Escolar</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
